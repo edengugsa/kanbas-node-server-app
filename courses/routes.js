@@ -12,7 +12,6 @@ function CourseRoutes(app) {
     res.send(course);
   });
 
-
   app.put("/api/courses/:id", (req, res) => {
     const { id } = req.params;
     const course = req.body;
